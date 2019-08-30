@@ -1,0 +1,44 @@
+<% include ./partials/header.ejs %>
+
+
+    <section class="TopSection">
+        <!-- Title -->
+        <h1 class="title"><%= title %></h1>
+        <!-- Top Box -->
+        <div id="" class="top-box">
+
+                  
+
+            <div class="item-a">
+                <img class="image" src="<%= image %>"> 
+                <div id="TimeToMake" class="">
+                    Time To Make: <span><%= time %></span> minutes
+                </div>
+                <div class="buttons">
+                    <a href="<%= source %>" class="btn btn-primary btn-lg">Link To Original Site</a>
+                    <a href="/" class="btn btn-primary btn-lg"> New Recipie</a>  
+                </div>
+
+            </div>             
+            <!-- Ingredients -->
+            <div class="item-b">
+                <div class="ingredients">
+                        <h4>Ingredients List</h4>
+                        <ul>
+                            <% item.forEach(function(item){ %>
+                            <li><%= JSON.stringify(item) %></li>
+                            <% }); %>
+                        </ul>
+                    </div>
+            </div>
+            
+        </div> 
+         <!-- Instructions -->
+        <section class="instructions"><h4>Instructions</h4><span class="inside"><%= instructions %></span></section>
+
+    </section>
+    
+
+
+
+<% include ./partials/footer.ejs %>
