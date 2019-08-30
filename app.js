@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public/'));
     app.get("/", (req, res)=>{
         unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=vegetarian%2Cdessert")
         .header("X-RapidAPI-Host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com")
-        .header("X-RapidAPI-Key", "792cc636f9msh0459285c97d1636p152869jsn3d3f17b6a166")
+        .header("X-RapidAPI-Key", "Can't let you do that Starfox")
         .end((result) => {
             
             let data = result.body.recipes[0];
