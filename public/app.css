@@ -1,0 +1,146 @@
+/* Tablets and Below - 1024px and below*/
+@media(max-width: 1024px){
+
+    body{
+        background-color: rgb(255, 255, 255);
+        font-family:'Times New Roman', Times, serif;
+    }
+    .TopSection{
+        display: grid;
+        margin: auto;
+    }
+    .title{
+        display: grid;
+        border: 8px solid black;
+        font-size: 400%;
+        text-align: center;
+    }
+    .top_box{
+        display: grid;
+        
+    }
+    .image{
+        display: grid;
+        align-content: center;
+        margin: auto;
+        padding-top: 2rem;
+    }
+    .ingredients{
+        display: grid;
+        margin: 2rem;
+        border: 4px solid black;
+        font-size: 150%;
+    }
+    .ingredients h4{
+        font-size: 200%;
+        border-bottom: 4px solid black;   
+        text-align: center;
+    }
+    .ingredients ul{
+        padding-right: 1rem;
+    }
+    #TimeToMake{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        margin: auto;
+        font-size: 300%;
+    }
+    .buttons{
+        display: grid;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1rem;
+        line-height: 150%;
+    }
+    .instructions{
+        display: grid;
+        margin: 2rem;
+        border: 4px solid black;
+        font-size: 150%;
+    }
+    .instructions h4{
+        font-size: 200%;
+        border-bottom: 4px solid black;
+        text-align: center;
+    }
+    .instructions span{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/*Large devices (large desktops, 1025px and up)*/
+@media (min-width: 1025px) {
+    body{
+        background-color: rgb(255, 255, 255);
+        font-family:'Times New Roman', Times, serif;
+    }
+    .TopSection{
+        display: grid;
+        margin: auto;
+    }
+    .title{
+        display: grid;
+        border: 8px solid black;
+        font-size: 400%;
+        text-align: center;
+    }
+    .image{
+        grid-area: image;
+        place-self: center;
+    }
+    .item-a{
+        grid-area: underbar;
+        justify-self: center;
+    }
+    .item-b{
+        grid-area: sidebar;
+    }
+    .top-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "underbar sidebar"
+            ". ."
+    }
+    .ingredients{
+        display: grid;
+        margin: 2rem;
+        border: 4px solid black;
+        font-size: 150%;
+    }
+    .ingredients h4{
+        font-size: 200%;
+        border-bottom: 4px solid black;   
+        text-align: center;
+    }
+    .ingredients ul{
+        padding-right: 1rem;
+    }
+    #TimeToMake{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        margin: auto;
+        font-size: 300%;
+    }
+    .buttons{
+        align-self: center;
+    }
+
+    .instructions{
+        display: grid;
+        margin: 2rem;
+        border: 4px solid black;
+        font-size: 150%;
+    }
+    .instructions h4{
+        font-size: 200%;
+        border-bottom: 4px solid black;
+        text-align: center;
+    }
+
+}
