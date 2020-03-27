@@ -1,3 +1,3 @@
-# Random-Deserts
+# Random-Desserts
 
-Serves up tasty deserts at the push of a button!
+Serves up tasty desserts at the push of a button!
